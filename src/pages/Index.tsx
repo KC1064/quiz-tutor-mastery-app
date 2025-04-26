@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { QuizProvider, useQuiz } from '@/contexts/QuizContext';
 import { LandingPage } from '@/components/LandingPage';
@@ -60,7 +61,7 @@ const QuizContent = () => {
   };
 
   if (!selectedWeek) {
-    return <LandingPage />;
+    return <LandingPage quizWeeks={Object.keys(quizData)} />;
   }
 
   return (

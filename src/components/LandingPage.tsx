@@ -4,7 +4,11 @@ import { useQuiz } from '@/contexts/QuizContext';
 import { motion } from 'framer-motion';
 import { WeekSelector } from './WeekSelector';
 
-export const LandingPage = () => {
+type LandingPageProps = {
+  quizWeeks?: string[];
+};
+
+export const LandingPage: React.FC<LandingPageProps> = ({ quizWeeks = [] }) => {
   const { selectedWeek, setSelectedWeek } = useQuiz();
 
   return (
@@ -28,7 +32,7 @@ export const LandingPage = () => {
             Test your knowledge by selecting a week to begin.
           </p>
           <WeekSelector 
-            weeks={Object.keys(quizData)}
+            weeks={quizWeeks}
             onWeekSelect={setSelectedWeek}
           />
         </motion.div>
