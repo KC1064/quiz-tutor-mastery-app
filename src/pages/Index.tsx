@@ -1,11 +1,10 @@
-
-import React, { useState } from 'react';
-import { QuizProvider } from '@/contexts/QuizContext';
-import { WeekSelector } from '@/components/WeekSelector';
+import React from 'react';
+import { QuizProvider, useQuiz } from '@/contexts/QuizContext';
+import { LandingPage } from '@/components/LandingPage';
 import { QuizCard } from '@/components/QuizCard';
 import { Button } from '@/components/ui/button';
-import { useQuiz } from '@/contexts/QuizContext';
 import { useToast } from '@/components/ui/use-toast';
+import { ArrowLeft } from 'lucide-react';
 
 // This would normally come from an API
 const quizData = {
@@ -45,23 +44,87 @@ const QuizContent = () => {
     score,
     setScore
   } = useQuiz();
-  const [currentQuizData, setCurrentQuizData] = useState(null);
+  const [currentQuizData, setCurrentQuizData] = React.useState(null);
 
-  const weeks = Object.keys(quizData);
-
-  const handleWeekSelect = (week: string) => {
-    setSelectedWeek(week);
-    if (week) {
-      setCurrentQuizData(quizData[week]);
-      setUserAnswers({});
-      setShowResults(false);
-      setScore(0);
-    } else {
-      setCurrentQuizData(null);
+  React.useEffect(() => {
+    if (selectedWeek) {
+      setCurrentQuizData(quizData[selectedWeek]);
     }
+  }, [selectedWeek]);
+
+  const handleReset = () => {
+    setSelectedWeek('');
+    setUserAnswers({});
+    setShowResults(false);
+    setScore(0);
   };
 
-  const handleSubmit = () => {
+  if (!selectedWeek) {
+    return <LandingPage />;
+  }
+
+  return (
+    <div className="min-h-screen bg-background py-8 px-4">
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-card rounded-xl shadow-sm p-6 mb-6 border border-border">
+          <div className="flex items-center justify-between mb-6">
+            <Button 
+              variant="outline" 
+              onClick={handleReset}
+              className="flex items-center gap-2"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </Button>
+            <h1 className="text-3xl font-bold text-center text-primary">
+              {selectedWeek} Quiz
+            </h1>
+          </div>
+          
+          {currentQuizData && !showResults && (
+            <>
+              {currentQuizData.map((question, index) => (
+                <QuizCard
+                  key={index}
+                  question={question}
+                  questionIndex={index}
+                />
+              ))}
+              
+              <div className="flex justify-center mt-8">
+                <Button 
+                  onClick={handleSubmit}
+                  className="px-8"
+                >
+                  Submit Quiz
+                </Button>
+              </div>
+            </>
+          )}
+
+          {showResults && (
+            <div className="bg-white rounded-xl shadow-sm p-6 text-center">
+              <h2 className="text-2xl font-bold mb-4">Your Results</h2>
+              <p className="text-4xl font-bold mb-6">
+                {score} / {currentQuizData.length}
+                <span className="text-gray-500 text-2xl ml-2">
+                  ({Math.round((score / currentQuizData.length) * 100)}%)
+                </span>
+              </p>
+              <Button 
+                onClick={handleReset}
+                variant="outline"
+              >
+                Try Again
+              </Button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
+  function handleSubmit() {
     if (!currentQuizData) return;
 
     let correctCount = 0;
@@ -83,73 +146,7 @@ const QuizContent = () => {
       title: "Quiz Completed!",
       description: `You scored ${correctCount} out of ${currentQuizData.length}`,
     });
-  };
-
-  const handleReset = () => {
-    setUserAnswers({});
-    setShowResults(false);
-    setScore(0);
-  };
-
-  return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
-      <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
-          <h1 className="text-3xl font-bold text-center mb-6 text-gray-900">
-            Weekly Quiz
-          </h1>
-          <WeekSelector weeks={weeks} onWeekSelect={handleWeekSelect} />
-        </div>
-
-        {currentQuizData && !showResults && (
-          <>
-            {currentQuizData.map((question, index) => (
-              <QuizCard
-                key={index}
-                question={question}
-                questionIndex={index}
-              />
-            ))}
-            
-            <div className="flex justify-center mt-8">
-              <Button 
-                onClick={handleSubmit}
-                className="px-8"
-              >
-                Submit Quiz
-              </Button>
-            </div>
-          </>
-        )}
-
-        {showResults && (
-          <div className="bg-white rounded-xl shadow-sm p-6 text-center">
-            <h2 className="text-2xl font-bold mb-4">Your Results</h2>
-            <p className="text-4xl font-bold mb-6">
-              {score} / {currentQuizData.length}
-              <span className="text-gray-500 text-2xl ml-2">
-                ({Math.round((score / currentQuizData.length) * 100)}%)
-              </span>
-            </p>
-            <Button 
-              onClick={handleReset}
-              variant="outline"
-            >
-              Try Again
-            </Button>
-          </div>
-        )}
-
-        {!selectedWeek && (
-          <div className="bg-white rounded-xl shadow-sm p-8 text-center">
-            <p className="text-gray-600 text-lg">
-              Please select a week to start the quiz
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
+  }
 };
 
 const Quiz = () => {
