@@ -1,42 +1,25 @@
 
 import React from 'react';
-import { useQuiz } from '@/contexts/QuizContext';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Button } from '@/components/ui/button';
 
 type WeekSelectorProps = {
   weeks: string[];
   onWeekSelect: (week: string) => void;
 };
 
-export const WeekSelector = ({ weeks, onWeekSelect }: WeekSelectorProps) => {
-  const { selectedWeek } = useQuiz();
-
+export const WeekSelector: React.FC<WeekSelectorProps> = ({ weeks, onWeekSelect }) => {
   return (
-    <div className="mb-8">
-      <label className="block text-gray-700 font-semibold mb-2">
-        Select a Week:
-      </label>
-      <Select
-        value={selectedWeek}
-        onValueChange={onWeekSelect}
-      >
-        <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select a week" />
-        </SelectTrigger>
-        <SelectContent>
-          {weeks.map((week) => (
-            <SelectItem key={week} value={week}>
-              {week}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+    <div className="grid grid-cols-2 gap-4">
+      {weeks.map((week) => (
+        <Button
+          key={week}
+          variant="outline"
+          className="text-foreground hover:bg-accent hover:text-accent-foreground"
+          onClick={() => onWeekSelect(week)}
+        >
+          {week}
+        </Button>
+      ))}
     </div>
   );
 };
