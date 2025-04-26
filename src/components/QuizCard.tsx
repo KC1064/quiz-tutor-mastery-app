@@ -2,14 +2,10 @@ import React from 'react';
 import { useQuiz } from '@/contexts/QuizContext';
 import { Check, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import type { QuizQuestion } from '@/hooks/useQuizData';
 
 type QuizCardProps = {
-  question: {
-    question: string;
-    options: Record<string, string>;
-    answers?: string[];
-    answer?: string;
-  };
+  question: QuizQuestion;
   questionIndex: number;
 };
 
@@ -39,7 +35,7 @@ export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
 
   const isCorrectAnswer = (option: string) => {
     if (!isOptionSelected(option)) return false;
-    const correctAnswers = question.answers || [question.answer];
+    const correctAnswers = question.answer ? [question.answer] : [];
     return correctAnswers.includes(option);
   };
 

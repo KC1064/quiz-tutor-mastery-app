@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { QuizProvider, useQuiz } from '@/contexts/QuizContext';
 import { LandingPage } from '@/components/LandingPage';
@@ -6,35 +5,11 @@ import { QuizCard } from '@/components/QuizCard';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import { ArrowLeft } from 'lucide-react';
-
-// This would normally come from an API
-const quizData = {
-  "Week 1": [
-    {
-      question: "What is React?",
-      options: {
-        "A": "A JavaScript library for building user interfaces",
-        "B": "A programming language",
-        "C": "A database system",
-        "D": "An operating system"
-      },
-      answer: "A"
-    },
-    {
-      question: "What is JSX?",
-      options: {
-        "A": "A JavaScript engine",
-        "B": "A syntax extension for JavaScript",
-        "C": "A new programming language",
-        "D": "A database query language"
-      },
-      answer: "B"
-    }
-  ]
-};
+import { useQuizData } from '@/hooks/useQuizData';
 
 const QuizContent = () => {
   const { toast } = useToast();
+  const { data: quizData, isLoading, error } = useQuizData();
   const {
     selectedWeek,
     setSelectedWeek,
@@ -45,13 +20,28 @@ const QuizContent = () => {
     score,
     setScore
   } = useQuiz();
-  const [currentQuizData, setCurrentQuizData] = React.useState(null);
 
-  React.useEffect(() => {
-    if (selectedWeek) {
-      setCurrentQuizData(quizData[selectedWeek]);
-    }
-  }, [selectedWeek]);
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-foreground">Loading quiz...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-destructive">Error loading quiz data</p>
+      </div>
+    );
+  }
+
+  if (!selectedWeek) {
+    return <LandingPage quizWeeks={Object.keys(quizData || {})} />;
+  }
+
+  const currentQuizData = quizData?.[selectedWeek];
 
   const handleReset = () => {
     setSelectedWeek('');
@@ -59,10 +49,6 @@ const QuizContent = () => {
     setShowResults(false);
     setScore(0);
   };
-
-  if (!selectedWeek) {
-    return <LandingPage quizWeeks={Object.keys(quizData)} />;
-  }
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -130,7 +116,7 @@ const QuizContent = () => {
 
     let correctCount = 0;
     currentQuizData.forEach((question, index) => {
-      const correctAnswers = question.answers || [question.answer];
+      const correctAnswers = question.answer ? [question.answer] : [];
       const userSelectedAnswers = userAnswers[index] || [];
       
       const isCorrect = 

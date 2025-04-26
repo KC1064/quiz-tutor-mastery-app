@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import { WeekSelector } from './WeekSelector';
 
 type LandingPageProps = {
-  quizWeeks?: string[];
+  quizWeeks: string[];
 };
 
-export const LandingPage: React.FC<LandingPageProps> = ({ quizWeeks = [] }) => {
-  const { selectedWeek, setSelectedWeek } = useQuiz();
+export const LandingPage: React.FC<LandingPageProps> = ({ quizWeeks }) => {
+  const { setSelectedWeek } = useQuiz();
 
   return (
     <motion.div 

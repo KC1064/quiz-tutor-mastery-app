@@ -1,0 +1,37 @@
+
+{
+  "Week 1": [
+    {
+      "question": "What is React?",
+      "options": {
+        "A": "A JavaScript library for building user interfaces",
+        "B": "A programming language",
+        "C": "A database system",
+        "D": "An operating system"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What is JSX?",
+      "options": {
+        "A": "A JavaScript engine",
+        "B": "A syntax extension for JavaScript",
+        "C": "A new programming language",
+        "D": "A database query language"
+      },
+      "answer": "B"
+    }
+  ],
+  "Week 2": [
+    {
+      "question": "What hook is used for side effects in React?",
+      "options": {
+        "A": "useState",
+        "B": "useReducer",
+        "C": "useEffect",
+        "D": "useContext"
+      },
+      "answer": "C"
+    }
+  ]
+}
