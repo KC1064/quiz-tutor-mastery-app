@@ -1,37 +1,1236 @@
-
 {
   "Week 1": [
     {
-      "question": "What is React?",
+      "question": "What makes an idea valuable even if it fails?",
       "options": {
-        "A": "A JavaScript library for building user interfaces",
-        "B": "A programming language",
-        "C": "A database system",
-        "D": "An operating system"
+        "a": "Avoiding collaboration to prevent shared blame",
+        "b": "Gaining valuable lessons and insights from the failure",
+        "c": "Shifting focus to unrelated projects immediately",
+        "d": "Disregarding accountability and blaming external factors"
       },
-      "answer": "A"
+      "answer": "b"
     },
     {
-      "question": "What is JSX?",
+      "question": "What are some key characteristics essential for a business to achieve success?",
       "options": {
-        "A": "A JavaScript engine",
-        "B": "A syntax extension for JavaScript",
-        "C": "A new programming language",
-        "D": "A database query language"
+        "a": "The ability to balance expenses while maintaining product quality",
+        "b": "Ignoring customer feedback to prioritize internal goals",
+        "c": "Strategic planning and adaptability to market changes",
+        "d": "Focusing solely on profit maximization"
       },
-      "answer": "B"
+      "answer": "c"
+    },
+    {
+      "question": "What are the primary objectives of selling a product or service, and how do these address customer needs?",
+      "options": {
+        "a": "Identifying and fulfilling customer and market needs",
+        "b": "Maximizing profits through aggressive pricing strategies",
+        "c": "Focusing on complex promotional campaigns",
+        "d": "Offering discounts to increase sales"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What makes an idea \"disruptive\"?",
+      "options": {
+        "a": "Maintaining the existing state and avoiding innovation",
+        "b": "Imitating successful competitors to gain market share",
+        "c": "Introducing changes that challenge existing market norms",
+        "d": "Strictly adhering to traditional market standards"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "How does entrepreneurship contribute to economic growth?",
+      "options": {
+        "a": "By developing robust business models without innovation",
+        "b": "By focusing solely on customer validation and discovery",
+        "c": "By identifying and solving market problems effectively",
+        "d": "By avoiding competitive risks through market isolation"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is emphasized in the Lean Startup methodology for product development?",
+      "options": {
+        "a": "Graduation degrees as a prerequisite for entrepreneurship",
+        "b": "Rigid execution of initial business plans",
+        "c": "Financial optimization over product innovation",
+        "d": "Continuous learning and validation through customer feedback"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What are the key objectives of the Lean Startup methodology when launching a new product or service?",
+      "options": {
+        "a": "Customer validation and iterative development",
+        "b": "Company building without market analysis",
+        "c": "Rapid scaling and long-term planning",
+        "d": "Agile engineering without customer feedback"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How do institutions foster innovation and entrepreneurship effectively?",
+      "options": {
+        "a": "By connecting academic research to practical applications in the market",
+        "b": "By focusing exclusively on theoretical research",
+        "c": "By isolating themselves from marketplace collaborations",
+        "d": "By discouraging experimentation within the institution"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How can evidence-based entrepreneurship be defined and applied effectively?",
+      "options": {
+        "a": "By utilizing validated learning through continuous experimentation and data analysis",
+        "b": "By implementing the Build-Measure-Learn cycle to iteratively develop and improve products",
+        "c": "By making decisions based on empirical evidence rather than assumptions",
+        "d": "By regularly engaging with customers to gather feedback and validate ideas"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What are some common mistakes startups make?",
+      "options": {
+        "a": "Adopting the Lean Startup methodology",
+        "b": "Focusing too much on the product and neglecting the market",
+        "c": "Developing solutions without engaging potential customers",
+        "d": "Preparing a business plan and estimating market size"
+      },
+      "answers": [
+        "b",
+        "c"
+      ]
     }
   ],
   "Week 2": [
     {
-      "question": "What hook is used for side effects in React?",
+      "question": "What can be the main reason for the failure of a startup?",
       "options": {
-        "A": "useState",
-        "B": "useReducer",
-        "C": "useEffect",
-        "D": "useContext"
+        "a": "No real need for the product or service",
+        "b": "A skilled and experienced team",
+        "c": "Having sufficient investors and funding",
+        "d": "Offering a user-friendly product"
       },
-      "answer": "C"
+      "answer": "a"
+    },
+    {
+      "question": "Which among the following could be a crucial factor in a team's unity and success?",
+      "options": {
+        "a": "Individual achievements",
+        "b": "Lack of diversity",
+        "c": "Frequent disagreements",
+        "d": "Shared vision and common ideology"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What are the key objectives of startup founders when launching a product?",
+      "options": {
+        "a": "Achieving rapid market entry without validation",
+        "b": "Iterative development and customer-centric learning",
+        "c": "Long-term planning without short-term feedback",
+        "d": "Building internal teams over market exploration"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How do customer interactions contribute to effectively identifying and addressing market needs?",
+      "options": {
+        "a": "By gathering direct feedback on products and services",
+        "b": "By uncovering customer pain points and preferences",
+        "c": "By validating business ideas and assumptions",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What role do early adopters play in helping a company refine its products or services?",
+      "options": {
+        "a": "Assist in marketing the product to a broader audience",
+        "b": "Provide critical feedback to improve the product",
+        "c": "Expand production capacity to meet demands",
+        "d": "Offer financial support for scaling operations"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which misconception can mislead startup founders during the growth phase?",
+      "options": {
+        "a": "Securing funding guarantees success",
+        "b": "Scaling the team strategically",
+        "c": "Prioritizing customer needs over product development",
+        "d": "Focusing on team-building over business goals"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Who plays the most crucial role in validating the success of a startup's product or service?",
+      "options": {
+        "a": "The founder",
+        "b": "The investors",
+        "c": "The customers",
+        "d": "The marketing teams"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What actions should founders take when faced with stagnation in progress?",
+      "options": {
+        "a": "Reevaluate the business strategy and pivot if necessary",
+        "b": "Increase marketing efforts and budget",
+        "c": "Ignore the issue and hope for improvement",
+        "d": "Cut down on expenses and reduce team size"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What characteristics are essential for a startup team to achieve long-term success?",
+      "options": {
+        "a": "Strong leadership and vision",
+        "b": "Effective communication and collaboration",
+        "c": "Ignoring customer feedback's and focusing on company vision",
+        "d": "Limited market research and focusing on advertisement"
+      },
+      "answers": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "question": "What is an essential quality that startup founders must possess?",
+      "options": {
+        "a": "Strong belief in the startup's vision",
+        "b": "Pursuit of endless funding",
+        "c": "Rapid product development skills",
+        "d": "Exceptional programming expertise"
+      },
+      "answer": "a"
+    }
+  ],
+  "Week 3": [
+    {
+      "question": "What role does empathy play while designing a product?",
+      "options": {
+        "a": "Enhances aesthetics",
+        "b": "Reduces manufacturing costs",
+        "c": "Fosters competition among designers",
+        "d": "Promotes user-centered design"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What characteristics are crucial for building an ideal team?",
+      "options": {
+        "a": "A varied skill set and diverse perspectives",
+        "b": "Singular expertise in a specific domain",
+        "c": "Limited experience and collaboration",
+        "d": "A homogeneous team with similar backgrounds"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Why is it important to take a product category approach instead of a single-product approach?",
+      "options": {
+        "a": "Encourages risk diversification and adaptability",
+        "b": "Focuses solely on cost-cutting measures",
+        "c": "Reduces customer engagement and feedback",
+        "d": "Limits the scope of market exploration"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What are the key qualities that each team member must possess when working as a team?",
+      "options": {
+        "a": "Flexibility and willingness to adapt",
+        "b": "Lowering ego and collaborating effectively",
+        "c": "Taking specific roles to solve problems",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What are the key elements essential for creating a clear and concise design brief?",
+      "options": {
+        "a": "Functional and user requirements",
+        "b": "Budget estimates and target audience",
+        "c": "Project timeline and brand vision",
+        "d": "Comprehensive technical specifications"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the importance of collaborative design in product development?",
+      "options": {
+        "a": "Facilitates resource sharing and expertise integration",
+        "b": "Streamlines manufacturing processes",
+        "c": "Enhances aesthetic appeal of the product",
+        "d": "Simplifies administrative tasks"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How can using regulatory barriers help in product design?",
+      "options": {
+        "a": "Simplifies administrative processes",
+        "b": "Encourages unrestricted innovation",
+        "c": "Ensures public health protection and legal compliance",
+        "d": "Promotes informal market practices"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Which element is essential for crafting an effective problem statement?",
+      "options": {
+        "a": "Providing a detailed solution",
+        "b": "Defining the problem clearly",
+        "c": "Establishing a strict budget",
+        "d": "Highlighting only the team's capabilities"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is a crucial factor in driving successful innovation within an organization?",
+      "options": {
+        "a": "Strict compliance with established procedures",
+        "b": "Competition between internal teams",
+        "c": "Interdisciplinary collaboration",
+        "d": "Extensive financial resources"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Identify the term used for \"Previously granted patents and published patent applications.\"",
+      "options": {
+        "a": "Prior art",
+        "b": "Reference documents",
+        "c": "Past literature",
+        "d": "Intellectual archives"
+      },
+      "answer": "a"
+    }
+  ],
+  "Week 4": [
+    {
+      "question": "What could cause a startup to fail despite having an innovative product?",
+      "options": {
+        "a": "Addressing user pain points effectively",
+        "b": "Prioritizing customer satisfaction",
+        "c": "Lack of understanding of customer needs",
+        "d": "Regular customer feedback for product improvement"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Which of the following best captures the essence of the 'outside-in thinking' approach in product design?",
+      "options": {
+        "a": "Creating products that cater to customer requirements",
+        "b": "Enhancing internal operational processes",
+        "c": "Focusing on excessive engineering solutions",
+        "d": "Disregarding customer feedback in decision-making"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "In which areas do startups face challenges during their early stages?",
+      "options": {
+        "a": "Scaling the business quickly",
+        "b": "Building a skilled and cohesive team",
+        "c": "Acquiring venture capital easily",
+        "d": "Creating an effective marketing strategy"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What strategies can effectively promote sustainable products in rural markets?",
+      "options": {
+        "a": "Social media campaigns targeting urban audiences",
+        "b": "Distribution through government schemes",
+        "c": "Online marketing through digital platforms",
+        "d": "Door-to-door sales in urban regions"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are some effective strategies to increase awareness about sustainable products?",
+      "options": {
+        "a": "Collaborating with influential figures and forming partnerships",
+        "b": "Solely relying on multi-level marketing and digital advertisements",
+        "c": "Hosting engaging and interactive demonstrations",
+        "d": "Building and educating communities"
+      },
+      "answers": [
+        "a",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "question": "How can pricing strategies improve the accessibility and financial viability of sustainable products?",
+      "options": {
+        "a": "Offering direct sales without intermediaries",
+        "b": "Government subsidies for eco-friendly products",
+        "c": "Encouraging bulk orders from organizations",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What factors are critical for a startup to attract investors?",
+      "options": {
+        "a": "Demonstrating a real and solvable problem",
+        "b": "Ignoring competition in the market",
+        "c": "Focusing solely on futuristic technology",
+        "d": "Providing vague or exaggerated solutions"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What key considerations should businesses keep in mind when entering a new market?",
+      "options": {
+        "a": "Understanding the cultural and economic environment",
+        "b": "Avoiding market research and going with instincts",
+        "c": "Ignoring local regulations and norms",
+        "d": "Relying solely on existing products and services without adaptation"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How are urgent or active problems identified on the problem recognition scale?",
+      "options": {
+        "a": "By ignoring the problem entirely",
+        "b": "Recognizing a problem and actively seeking a solution",
+        "c": "Recognizing a problem but refusing to act on it",
+        "d": "Adjusting to the problem without solving it"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "In the passive problem stage, what defines an individual's awareness of a problem on the problem recognition scale?",
+      "options": {
+        "a": "No awareness of the problem exists",
+        "b": "Awareness of the problem but no motivation to change",
+        "c": "Motivation to change without understanding the problem",
+        "d": "Recognizing the problem but being unable to act on it"
+      },
+      "answer": "b"
+    }
+  ],
+  "Week 5": [
+    {
+      "question": "What strategies are crucial for converting academic research into practical societal benefits?",
+      "options": {
+        "a": "Establishing obstacles to innovation",
+        "b": "Partnering with industries to link research with real-world applications",
+        "c": "Keeping research results confidential",
+        "d": "Engaging in rivalry with industries to demonstrate academic dominance"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Why are investors often reluctant to invest in healthcare product startups?",
+      "options": {
+        "a": "High profit margins in the industry",
+        "b": "Poor success rates of medical devices",
+        "c": "Rapidly growing demand for medical devices",
+        "d": "Shorter research and development cycles"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What initial step is crucial for developing a successful design solution?",
+      "options": {
+        "a": "Identifying the problem and understanding functional requirements",
+        "b": "Planning marketing campaigns and advertising strategies",
+        "c": "Conducting employee training and managing resources",
+        "d": "Securing Intellectual Property Rights and patents"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What role did telemedicine play in improving healthcare during global pandemics?",
+      "options": {
+        "a": "Increased healthcare costs without benefits",
+        "b": "Reduced the strain on physical healthcare facilities",
+        "c": "Created barriers for patient access to care",
+        "d": "Complicated the delivery of medical services"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the main purpose of pilot production in the development process?",
+      "options": {
+        "a": "Generating marketing and advertising content",
+        "b": "Testing and adapting design features based on user feedback",
+        "c": "Filing for patents before large-scale production",
+        "d": "Conducting research in controlled lab environments"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "At which point in the innovation process should businesses prioritize securing Intellectual Property Rights (IPR) to protect their inventions?",
+      "options": {
+        "a": "During the initial idea conception",
+        "b": "After developing a working prototype",
+        "c": "Before commercializing the product",
+        "d": "Once the product is widely available in the market"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Who is eligible to obtain licenses for Intellectual Property Rights (IPR)?",
+      "options": {
+        "a": "Start-ups only",
+        "b": "Industry professionals only",
+        "c": "Non-Governmental Organizations (NGOs) only",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What does TRL stand for in the context of innovation and development?",
+      "options": {
+        "a": "Technology Readiness Levels",
+        "b": "Transition and Research Limits",
+        "c": "Technological Resource Level",
+        "d": "Test and Reliability Levels"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What key aspect should be prioritized when developing a Proof of Concept (POC)?",
+      "options": {
+        "a": "Demonstrating functional feasibility",
+        "b": "Implementing industrial techniques for scalability",
+        "c": "Securing patent protection during initial stages",
+        "d": "Brainstorming creative ideas without practical implementation"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What are the best practices for defining the functional requirements of a project?",
+      "options": {
+        "a": "Conducting thorough stakeholder interviews to gather insights",
+        "b": "Ignoring end-user feedback and relying on assumptions",
+        "c": "Prioritizing features based on developer convenience",
+        "d": "Overlooking the project scope and timeline"
+      },
+      "answer": "b"
+    }
+  ],
+  "Week 6": [
+    {
+      "question": "Which key elements are essential for successfully engaging customers using a human-centered approach in product development?",
+      "options": {
+        "a": "Utilizing lean methods and tools",
+        "b": "Building empathy and conducting user research",
+        "c": "Relying on traditional marketing strategies",
+        "d": "Concentrating solely on product ideas"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which factor is most critical when aligning a product with customer expectations during development?",
+      "options": {
+        "a": "Conducting iterative testing and feedback loops",
+        "b": "Emphasizing aesthetic appeal over functionality",
+        "c": "Ignoring competitor analysis",
+        "d": "Skipping the prototyping phase"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How do design thinking, user research, and strategic planning benefit an organization?",
+      "options": {
+        "a": "Links business operations with innovation efforts",
+        "b": "Helps build mock-ups for product testing",
+        "c": "Focuses on generating creative ideas only",
+        "d": "Encourages quick decision-making without research"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What should the primary objective of a design researcher and strategist be when working for a client?",
+      "options": {
+        "a": "Focus solely on the product's core idea",
+        "b": "Balance user needs, technological feasibility, and business objectives",
+        "c": "Ensure customer experience takes precedence over business goals",
+        "d": "Prioritize technical feasibility over desirability"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which strategy is most effective for encouraging interviewees to share valuable information?",
+      "options": {
+        "a": "Asking complex and detailed questions",
+        "b": "Beginning with secondary objectives",
+        "c": "Building rapport and trust with the interviewee",
+        "d": "Employing a rigid and formal interview structure"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What are the essential characteristics of a robust design brief?",
+      "options": {
+        "a": "Providing detailed technical specifications and timelines",
+        "b": "Outlining comprehensive marketing strategies",
+        "c": "Including extensive budget estimates",
+        "d": "Identifying user pain points, mapping user journeys, and ensuring ecosystem fit"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is design management in relation to achieving organizational goals?",
+      "options": {
+        "a": "Lateral thinking and creativity",
+        "b": "Overseeing design teams and their timelines",
+        "c": "Collaboration between stakeholders to meet business goals",
+        "d": "A structured process for fulfilling business objectives through design"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What are the three key qualities that a client seeks in a design firm?",
+      "options": {
+        "a": "Discipline, speed, and high fees",
+        "b": "Quality, speed, and transparency",
+        "c": "Collaboration, extended timelines, and reliability",
+        "d": "Minimal interaction, predictability, and discipline"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What should be included in a comprehensive design brief to ensure project success?",
+      "options": {
+        "a": "Detailed project timeline and budget",
+        "b": "In-depth competitor analysis and benchmarking",
+        "c": "Specific user personas and their pain points",
+        "d": "Finalized marketing strategies and plans"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "Why is it important for designers to empathize with both users and business goals?",
+      "options": {
+        "a": "To ensure marketing and advertising success",
+        "b": "To prioritize aesthetics over functionality",
+        "c": "To balance creative ideas with realistic objectives",
+        "d": "To reduce the complexity of the design process"
+      },
+      "answer": "c"
+    }
+  ],
+  "Week 7": [
+    {
+      "question": "Which approach emphasizes collaboration, iteration, and a non-linear process to develop innovative solutions?",
+      "options": {
+        "a": "Economic stability",
+        "b": "Design thinking",
+        "c": "Complacency",
+        "d": "Short-term focus"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is a problem-solving methodology that encourages creative thinking by connecting seemingly unrelated concepts?",
+      "options": {
+        "a": "Brainstorming",
+        "b": "Synectics",
+        "c": "Mind mapping",
+        "d": "SWOT analysis"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the most important three critical factors to consider when developing a product?",
+      "options": {
+        "a": "Market Need, technical feasibility, and business viability",
+        "b": "Advertisement, product packaging, and distribution networks",
+        "c": "User sensibility, market size, and product range",
+        "d": "Profit, market sensitivity, and employee strength"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Which tool graphically represents a business model and helps stakeholders understand it easily?",
+      "options": {
+        "a": "Business Model Canvas",
+        "b": "Balance sheet",
+        "c": "Profit and loss statement",
+        "d": "Organizational chart"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the meaning of \"Double Whammy\"?",
+      "options": {
+        "a": "A situation where two positive events occur simultaneously.",
+        "b": "A situation where two adverse events or effects occur simultaneously.",
+        "c": "A term used to describe a single unfortunate event.",
+        "d": "A financial model for maximizing profits."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What makes a collaborative model beneficial for entrepreneurship?",
+      "options": {
+        "a": "Provides access to resources",
+        "b": "Offers networking opportunities",
+        "c": "Creates a sense of community",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What distinguishes the fractional ownership business model from other models?",
+      "options": {
+        "a": "Shared ownership of physical assets",
+        "b": "Focus on virtual assets and digital goods",
+        "c": "Primary emphasis on intellectual property rights",
+        "d": "Leasing equipment to businesses"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What key criteria should a business model meet to achieve optimal success?",
+      "options": {
+        "a": "High Initial Investment, Extensive Workforce, and Expensive Marketing",
+        "b": "Clear Value Proposition, Scalability, and Sustainable Revenue Streams",
+        "c": "Low Costs, Rapid Expansion, and Minimal Effort",
+        "d": "Single Revenue Source, Limited Target Market, and High Complexity"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which key performance metrics help to monitor a business's success?",
+      "options": {
+        "a": "Revenue growth, customer acquisition, and value proposition",
+        "b": "Employee welfare, operational cost reduction, and inventory turnover",
+        "c": "Brand recognition, social media reach, and product diversification",
+        "d": "Customer retention, marketing spends, and aesthetic appeal"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Why is the Lean Canvas a valuable tool for startups?",
+      "options": {
+        "a": "Helps secure large investments from venture capitalists",
+        "b": "Develops a detailed five-year financial plan",
+        "c": "Allows startups to test and iterate on their business model assumptions quickly",
+        "d": "Designs a complex organizational structure for future growth"
+      },
+      "answer": "c"
+    }
+  ],
+  "Week 8": [
+    {
+      "question": "What advantages can your business gain from identifying early adopters?",
+      "options": {
+        "a": "Competitive disadvantage",
+        "b": "Validate market demands through early feedback",
+        "c": "Slow revenue generation",
+        "d": "Requires less marketing effort"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the key characteristics that early-stage entrepreneurs should develop?",
+      "options": {
+        "a": "An entrepreneurial mindset",
+        "b": "Adaptability and resilience",
+        "c": "Upholding ethical standards",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is essential for delivering a compelling business pitch to investors?",
+      "options": {
+        "a": "Detailed operational procedures",
+        "b": "A scalable and profitable business model",
+        "c": "Market size and demographics",
+        "d": "Long-term industry trends"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What role does a Minimum Viable Product (MVP) play in product development?",
+      "options": {
+        "a": "Builds brand reputation without validation",
+        "b": "Attracts early-adopter customers and validates the product idea",
+        "c": "Focuses on short-term revenue generation",
+        "d": "Prioritizes aesthetics over functionality"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the initial steps involved in developing a Lean Canvas?",
+      "options": {
+        "a": "Identify your target customers and users",
+        "b": "List your customer’s top three problems",
+        "c": "Develop solutions for each identified problem",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What factors must a product have to remain competitive in the market?",
+      "options": {
+        "a": "Consistent product improvement and innovation",
+        "b": "Incremental price increases",
+        "c": "Limited scalability to control costs",
+        "d": "Focus on low-impact trends"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What term is used to describe legal protections that prevent unauthorized use of original creative works?",
+      "options": {
+        "a": "Physical property",
+        "b": "Intellectual property",
+        "c": "Commercial asset",
+        "d": "Industrial design"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which types of intellectual property rights (IPR) protect innovations and creative works?",
+      "options": {
+        "a": "Real estate and buildings",
+        "b": "Patents, copyrights, trademarks, and trade secrets",
+        "c": "Financial statements and records",
+        "d": "Office equipment and tools"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the primary focus of customer acquisition strategies for startups?",
+      "options": {
+        "a": "Ensuring long-term customer retention",
+        "b": "Maximizing short-term sales revenue",
+        "c": "Ignoring customer feedback for cost-saving",
+        "d": "Relying on word-of-mouth marketing alone"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How does a strong Unique Value Proposition (UVP) benefit a startup?",
+      "options": {
+        "a": "Enhances the company's ability to attract and retain customers by clearly addressing their needs and preferences",
+        "b": "Solely focuses on improving financial performance metrics without considering customer satisfaction",
+        "c": "Prioritizes technological infrastructure over understanding customer needs",
+        "d": "Concentrates on offering low-cost services at the expense of quality"
+      },
+      "answer": "a"
+    }
+  ],
+  "Week 9": [
+    {
+      "question": "What barriers must a designer or entrepreneur overcome to turn an idea into action?",
+      "options": {
+        "a": "Lack of confidence in their skills",
+        "b": "Fear of negative feedback",
+        "c": "Difficulty in securing funding",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the most important relationship for a startup to manage?",
+      "options": {
+        "a": "Funding sources",
+        "b": "Target customers",
+        "c": "Technological infrastructure",
+        "d": "Market needs"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What types of funding are typically sought by early-stage entrepreneurs or startups?",
+      "options": {
+        "a": "Government grants",
+        "b": "Seed funding and crowdfunding",
+        "c": "Long-term loans with high interest rates",
+        "d": "Equity funds"
+      },
+      "answer": "a, b"
+    },
+    {
+      "question": "What are some reasons why certain regions may lag in techno-entrepreneurial ventures?",
+      "options": {
+        "a": "Education is focused solely on securing jobs",
+        "b": "Abundance of natural resources reduces the need for innovation",
+        "c": "Government policies discourage entrepreneurship",
+        "d": "All of the above"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the incubation stage in the entrepreneurial journey?",
+      "options": {
+        "a": "Developing a business plan and securing resources",
+        "b": "Taking a product idea to commercialization",
+        "c": "Conducting advanced research and development",
+        "d": "Scaling the business for global markets"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How does the role of an entrepreneur differ from that of an innovator?",
+      "options": {
+        "a": "Entrepreneurs focus on maximizing profits, while innovators solve problems without business goals",
+        "b": "Entrepreneurs see problems as business opportunities, while innovators focus solely on solving problems",
+        "c": "Entrepreneurs work alone, while innovators always work in teams",
+        "d": "Entrepreneurs need formal education, while innovators rely on creativity"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of clinical immersion in the healthcare sector for entrepreneurs?",
+      "options": {
+        "a": "To provide administrative training and management skills",
+        "b": "To identify unmet needs and gather insights for innovation",
+        "c": "To develop marketing strategies for healthcare products",
+        "d": "To focus on financial analysis and budget planning"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What key factor ensures better execution of an entrepreneurial idea?",
+      "options": {
+        "a": "Clear definition of customer needs and market gaps",
+        "b": "Strong advertising strategy and brand presence",
+        "c": "Advanced office infrastructure and equipment",
+        "d": "Rigid adherence to the initial business plan"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the process of transferring an idea to industry through intellectual property or technology transfer called?",
+      "options": {
+        "a": "Entrepreneurship",
+        "b": "Commercialization",
+        "c": "Enterprise development",
+        "d": "Incubation"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which stage of the entrepreneurial journey focuses on the initial creation and development of a startup idea?",
+      "options": {
+        "a": "Idea Generation Stage",
+        "b": "Research Stage",
+        "c": "Incubation Stage",
+        "d": "Scaling Stage"
+      },
+      "answer": "a"
+    }
+  ],
+  "Week 10": [
+    {
+      "question": "What creative thinking technique involves individuals imagining themselves as part of the problem or situation they are trying to solve?",
+      "options": {
+        "a": "Fantasy analogy",
+        "b": "Personal analogy",
+        "c": "Symbolic analogy",
+        "d": "CAD analogy"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which of the following is NOT a typical prototyping method?",
+      "options": {
+        "a": "Additive methods",
+        "b": "Subtractive methods",
+        "c": "Forming methods",
+        "d": "Lateral thinking"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the correct sequence during a product development process?",
+      "options": {
+        "a": "Ideation → Concept Generation → Prototyping → Testing → Market Launch",
+        "b": "Market Research → Concept Generation → Testing → Ideation → Prototyping",
+        "c": "Concept Generation → Prototyping → Testing → Market Launch → Ideation",
+        "d": "Ideation → Market Launch → Prototype → Testing → Concept Generation"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Which type of reasoning involves forming general conclusions from specific observations?",
+      "options": {
+        "a": "Abductive reasoning",
+        "b": "Deductive reasoning",
+        "c": "Inductive reasoning",
+        "d": "Analytical reasoning"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "How does frugality in product innovation benefit organizations?",
+      "options": {
+        "a": "By increasing production costs to maximize resources",
+        "b": "By minimizing waste and reducing costs through efficient use of resources",
+        "c": "By prioritizing aesthetics over functionality",
+        "d": "By focusing solely on rapid scaling without cost considerations"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the primary purpose of a Proof of Concept (POC)?",
+      "options": {
+        "a": "To validate the feasibility and viability of a new idea or concept",
+        "b": "To generate the final product for market launch",
+        "c": "To secure funding for large-scale production",
+        "d": "To build prototypes for user feedback"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What does prototyping aim to achieve in the design process?",
+      "options": {
+        "a": "Finalizing the design for immediate market release",
+        "b": "Creating models to test and improve design, functionality, and usability",
+        "c": "Building large-scale production units for market distribution",
+        "d": "Avoiding iterative development to save time"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the primary goal of Synectics in the design process?",
+      "options": {
+        "a": "Encouraging exploration and breaking conventional thinking",
+        "b": "Generating a single, perfect solution to a problem",
+        "c": "Reaching consensus among team members quickly",
+        "d": "Applying detailed technical analysis to refine existing concepts"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How can entrepreneurs effectively collaborate with one another?",
+      "options": {
+        "a": "By franchising their mutual businesses",
+        "b": "By sharing resources and distributing production responsibilities",
+        "c": "By competing in the same market segments",
+        "d": "All of the above"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Why is it important for designers to create prototypes before deploying a product?",
+      "options": {
+        "a": "To identify and resolve design flaws early in the process",
+        "b": "To use prototypes as the final version for market release",
+        "c": "To skip the need for market research and testing",
+        "d": "To focus on aesthetics without user input"
+      },
+      "answer": "a"
+    }
+  ],
+  "Week 11": [
+    {
+      "question": "What is the most effective approach for developing products that meet the needs of specially-abled people?",
+      "options": {
+        "a": "User-centered design",
+        "b": "Exclusivity in design",
+        "c": "Profit maximization",
+        "d": "Reducing production costs"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What are the two key aspects to focus on when developing a product using assistive technology?",
+      "options": {
+        "a": "Promoting awareness about digital alternatives",
+        "b": "Making users independent and fostering social integration",
+        "c": "Redesigning existing products for the market",
+        "d": "Creating exclusive and expensive solutions"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the critical factors for a product to succeed in the market?",
+      "options": {
+        "a": "Being trendy and common",
+        "b": "Being relevant and differentiated",
+        "c": "Being cheap and generic",
+        "d": "Being expensive and complex"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What should a startup offer to persuade investors or customers to invest in or purchase its product?",
+      "options": {
+        "a": "An unrealistic guaranteed return on investment",
+        "b": "A unique and differentiated service or product",
+        "c": "A vague and unclear value proposition",
+        "d": "A low-cost product with limited functionality"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Why is it advisable to avoid using cheap materials when developing a product, especially in a B2C context?",
+      "options": {
+        "a": "Cheap materials reduce production time significantly",
+        "b": "Using cheap materials increases return and servicing costs",
+        "c": "Cheap materials ensure better brand reputation",
+        "d": "Cheap materials improve the product's aesthetic appeal"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What potential risk factor could affect the viability of a startup's business model?",
+      "options": {
+        "a": "Strong customer loyalty and retention",
+        "b": "Reliance on a limited number of corporate clients",
+        "c": "Rapidly decreasing operational costs",
+        "d": "Established brand recognition"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How does human-to-human interaction benefit product design compared to AI-based solutions?",
+      "options": {
+        "a": "AI processes designs faster and more efficiently",
+        "b": "Human interaction fosters empathy and understanding of individual needs",
+        "c": "AI consistently improves through machine learning",
+        "d": "AI offers a broader range of design capabilities"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How can design contribute to the development of cognitive, motor, and analytical skills in children?",
+      "options": {
+        "a": "By creating interactive games that encourage physical movement and coordination",
+        "b": "By focusing solely on aesthetic appeal and trendy designs",
+        "c": "By using advanced technology for entertainment purposes",
+        "d": "By emphasizing cost-effectiveness over engagement"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What factors should be prioritized when developing a product using evidence-based learning methodologies?",
+      "options": {
+        "a": "Understanding target customers and measuring the impact of the solution",
+        "b": "Increasing brand recognition and analyzing market competition",
+        "c": "Allocating advertising budgets and determining technical specifications",
+        "d": "Designing packaging and setting product pricing"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Why is it essential for a product to align with customer needs and preferences during its design?",
+      "options": {
+        "a": "To reduce the cost of production",
+        "b": "To ensure long-term customer satisfaction and loyalty",
+        "c": "To focus on marketing trends exclusively",
+        "d": "To simplify the manufacturing process"
+      },
+      "answer": "b"
+    }
+  ],
+  "Week 12": [
+    {
+      "question": "How does identifying problems early in the product design process help businesses?",
+      "options": {
+        "a": "Leads to overemphasis on a single issue",
+        "b": "Provides a well-defined direction for development",
+        "c": "Assumes problems remain static throughout the process",
+        "d": "Overlooks user insights during the design phase"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the benefits of designing modular and customizable products?",
+      "options": {
+        "a": "Increased customer satisfaction and enhanced efficiency",
+        "b": "Higher production costs and limited scalability",
+        "c": "Reduced customer engagement and feedback opportunities",
+        "d": "Simplified designs with minimal user options"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "How does analyzing a \"Beachhead market\" help businesses during product launch?",
+      "options": {
+        "a": "Spreads resources thinly across multiple segments",
+        "b": "Identifies a focused customer segment for initial success",
+        "c": "Skips customer research and prioritizes production",
+        "d": "Avoids market segmentation entirely"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How can networking be utilized effectively to harness its full potential?",
+      "options": {
+        "a": "Limiting interactions to close friends only",
+        "b": "Promoting products through targeted connections",
+        "c": "Avoiding industry events and conferences",
+        "d": "Keeping networking efforts informal and unstructured"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What are the advantages of the \"Inverted Pyramid Model\" for product-centric businesses?",
+      "options": {
+        "a": "Increased development costs due to complex designs",
+        "b": "Improved customer focus by prioritizing their needs",
+        "c": "Creation of complex product descriptions for a wider audience",
+        "d": "Prioritizing concise messaging with a clear audience focus"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the most crucial step in the product design process to ensure a startup's success?",
+      "options": {
+        "a": "Identifying the target customer segment",
+        "b": "Ignoring user feedback during early stages",
+        "c": "Skipping competitor analysis to save time",
+        "d": "Overlooking market research to focus on production"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is considered an ideal marketing strategy for startups?",
+      "options": {
+        "a": "Expensive and extravagant campaigns",
+        "b": "Short-term and aggressive advertising",
+        "c": "Innovative and lean strategies",
+        "d": "Random and unfocused marketing efforts"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What factors should be prioritized when designing a product for the market?",
+      "options": {
+        "a": "Irrelevant personal opinions and preferences",
+        "b": "Customer needs and preferences",
+        "c": "Excessive technical details and low usability",
+        "d": "Low-impact trends to reduce risks"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Why is it important to emphasize the product solution when presenting a business idea?",
+      "options": {
+        "a": "To focus on irrelevant features for market differentiation",
+        "b": "To overemphasize minor market segments",
+        "c": "To provide clarity on how the product addresses a specific problem",
+        "d": "To focus on overambitious goals for investor appeal"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is an essential factor to focus on when pitching a business idea to investors?",
+      "options": {
+        "a": "Presenting a vague and unclear concept",
+        "b": "Avoiding discussions about market potential",
+        "c": "Clearly articulating the value proposition and market fit",
+        "d": "Presenting weak financial projections to lower expectations"
+      },
+      "answer": "c"
     }
   ]
 }

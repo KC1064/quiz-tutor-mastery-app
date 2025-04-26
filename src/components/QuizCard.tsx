@@ -40,8 +40,8 @@ export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6 mb-6 transition-all">
-      <h3 className="text-lg font-semibold mb-4 text-gray-800">
+    <div className="border-white/55 border-2 rounded-xl shadow-sm p-6 mb-6 transition-all">
+      <h3 className="text-lg font-semibold mb-4 text-white/80">
         {questionIndex + 1}. {question.question}
       </h3>
       <div className="space-y-3">
@@ -55,7 +55,7 @@ export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
               onClick={() => handleAnswerChange(optionKey)}
               className={cn(
                 "w-full text-left px-4 py-3 rounded-lg transition-all duration-200",
-                "flex items-center justify-between group hover:bg-gray-50",
+                "flex items-center justify-between group hover:bg-gray-500",
                 selected && correct && "bg-green-50 border-green-200 text-green-900",
                 selected && !correct && "bg-red-50 border-red-200 text-red-900",
                 !selected && "border border-gray-200"
