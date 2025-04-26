@@ -10,7 +10,7 @@ export type QuizQuestion = {
 export type QuizData = Record<string, QuizQuestion[]>;
 
 const fetchQuizData = async (): Promise<QuizData> => {
-  const response = await fetch('/src/data/quizData.json');
+  const response = await fetch('/quizData.json');
   if (!response.ok) {
     throw new Error('Failed to fetch quiz data');
   }
