@@ -12,19 +12,31 @@ type QuizCardProps = {
 export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
   const { userAnswers, setUserAnswers } = useQuiz();
 
+  const isMultipleCorrect = Array.isArray(question.answers);
+
+  const getCorrectAnswers = () => {
+    if (Array.isArray(question.answers)) return question.answers;
+    if (question.answer) return [question.answer];
+    return [];
+  };
+
   const handleAnswerChange = (option: string) => {
     setUserAnswers(prev => {
       const newAnswers = { ...prev };
       const currentAnswers = newAnswers[questionIndex] || [];
-      
-      // If it's already selected, remove it
-      if (currentAnswers.includes(option)) {
-        newAnswers[questionIndex] = currentAnswers.filter(opt => opt !== option);
+
+      if (isMultipleCorrect) {
+        // Multi-select
+        if (currentAnswers.includes(option)) {
+          newAnswers[questionIndex] = currentAnswers.filter(opt => opt !== option);
+        } else {
+          newAnswers[questionIndex] = [...currentAnswers, option];
+        }
       } else {
-        // Otherwise add it
+        // Single-select
         newAnswers[questionIndex] = [option];
       }
-      
+
       return newAnswers;
     });
   };
@@ -35,7 +47,7 @@ export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
 
   const isCorrectAnswer = (option: string) => {
     if (!isOptionSelected(option)) return false;
-    const correctAnswers = question.answer ? [question.answer] : [];
+    const correctAnswers = getCorrectAnswers();
     return correctAnswers.includes(option);
   };
 
@@ -48,7 +60,7 @@ export const QuizCard = ({ question, questionIndex }: QuizCardProps) => {
         {Object.entries(question.options).map(([optionKey, optionText]) => {
           const selected = isOptionSelected(optionKey);
           const correct = isCorrectAnswer(optionKey);
-          
+
           return (
             <button
               key={optionKey}
